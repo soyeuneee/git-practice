@@ -5,7 +5,8 @@ import names
 
 
 def run():
-    for name in names.__dict__:
+    for _name in filter(lambda x: '_' not in x, dir(names)):
+        name = names.__getattribute__(_name)
         print(name.hi)
 
 
