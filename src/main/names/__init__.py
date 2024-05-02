@@ -11,3 +11,4 @@ from . import 강리아
 from . import 전석원
 from. import 성준혁
 from . import 유진서
+from . import 김수진
