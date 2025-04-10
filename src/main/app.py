@@ -5,9 +5,9 @@ import names
 
 
 def run():
-    for _name in filter(lambda x: '_' not in x, dir(names)):
+    for index, _name in enumerate(filter(lambda x: '_' not in x, dir(names))):
         name = names.__getattribute__(_name)
-        print(name.hi)
+        print(index, "|", _name, ":", name.hi)
 
 
 if __name__ == "__main__":
