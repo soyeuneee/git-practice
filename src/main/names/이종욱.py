@@ -1,1 +1,0 @@
-hi = "Hi everyone (이종욱)"
